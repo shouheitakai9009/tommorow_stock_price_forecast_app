@@ -1,6 +1,9 @@
 import pandas as pd
 from utils import dataframe
 
+def volatility(df):
+  return df[dataframe.HIGH] - df[dataframe.LOW]
+
 # 単純移動平均を取得
 def sma(df: pd.DataFrame, day: int):
   return df[dataframe.CLOSE].rolling(day).sum() / day
