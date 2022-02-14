@@ -1,0 +1,2 @@
+# tommorow_stock_price_forecast_app
+指定した銘柄の翌営業日の株価（終値）を重線形回帰モデルで予測するシステムです。
