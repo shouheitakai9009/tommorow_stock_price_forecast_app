@@ -7,7 +7,7 @@ class StockPriceUtil():
 
   def get_stock_price(self, period_type, period, frequency_type, frequency):
     symbol_data = {}
-    my_self = share.Share(f'{str(self.symbol)}.T')
+    my_self = share.Share(self.symbol)
     try:
       symbol_data = my_self.get_historical(period_type, period, frequency_type, frequency)
     except YahooFinanceError as e:
